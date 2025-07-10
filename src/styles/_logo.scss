@@ -1,0 +1,46 @@
+.logo {
+  width: 169.56px;
+  height: 48px;
+
+  margin: 0;
+}
+
+
+
+@media (max-width: 1440px) {
+  .logo {
+    width: clamp(0px, 11.775vw, 169.56px);
+    height: clamp(0px, 3.3333vw, 48px);
+    margin: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo {
+    width: 113.04px;
+    height: 32px;
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    width: clamp(0px, 14.7188vw , 113.04px);
+    height: clamp(0px, 4.16667vw , 32px);
+    margin: 0;
+  }
+}
+@media (max-width: 480px) {
+  .logo {
+    width: 113.04px;
+    height: 32px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo {
+    width: clamp(0px, 30.144vw, 113.04px);
+    height: clamp(0px, 8.5333vw, 32px);
+    margin: 0;
+  }
+}

@@ -1,0 +1,245 @@
+.footer {
+  border-top: 1px solid #E5E5E5;
+  // background-color: rgb(76, 246, 252);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+	position: relative;
+
+	position: fixed;
+  bottom: 0;
+  left: 0;
+	width: 100%;
+	background-color: white;
+	z-index: 500;
+
+
+}
+
+
+.footer-content-wrapper {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 25px;
+  margin-bottom: 24px;
+ 
+
+}
+
+
+@media (max-width: 1440px) {
+	.footer-content-wrapper {
+
+		margin-top: clamp(0px, 1.7361vw, 25px);
+		margin-bottom: clamp(0px, 1.6667vw, 24px);
+
+	}
+}
+
+@media (max-width: 1024px) {
+	.footer-content-wrapper {
+	max-width: 768px;
+		margin-top: 25px;
+		margin-bottom: 24px;
+
+	}
+}
+
+@media (max-width: 768px) {
+	.footer-content-wrapper {
+
+		margin-top: clamp(0px, 3.2552vw,25px);
+		margin-bottom: clamp(0px, 3.125vw, 24px);
+
+	}
+}
+
+@media (max-width: 480px) {
+	.footer-content-wrapper {
+	max-width: 375px;
+		margin-top: 17px;
+		margin-bottom: 16px;
+
+	}
+}
+
+@media (max-width: 375px) {
+	.footer-content-wrapper {
+	max-width: 375px;
+		margin-top: calmp(0px, 4.5333vw,17px);
+		margin-bottom: calmp(0px, 4.2667vw,16px);
+
+	}
+}
+
+.footer-painting-info {
+ 
+  height: 47px;
+ 
+  margin-left: 41px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+@media (max-width: 1440px) {
+  .footer-painting-info {
+    margin-left: clamp(0px, 2.8472vw, 41px);
+
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-painting-info {
+    margin-left: 41px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-painting-info {
+		height: clamp(0px, 6.1197vw ,47px);
+    margin-left: clamp(0px, 5.3385vw,41px);
+  }
+}
+@media (max-width: 480px) {
+  .footer-painting-info {
+    margin-left: 24px;
+
+		height: 39px;
+	
+  }
+}
+@media (max-width: 375px) {
+  .footer-painting-info {
+    margin-left: clamp(0px, 6.4vw, 24px);
+
+		height: clamp(0px, 10.4vw, 39px);
+		
+  }
+}
+
+.footer-painting-info-paining-name, .footer-painting-info-artist-name{
+	margin: 0;
+	user-select: text;
+}
+
+.footer-painting-info-paining-name{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+@media (max-width: 768px) {
+
+	.footer-painting-info-paining-name{
+		font-size: clamp(0px, 2.3437vw,18px);
+
+	}
+}
+
+
+@media (max-width: 480px) {
+	.footer-painting-info-paining-name {
+		font-size: 14px;
+	}
+}
+
+
+@media (max-width: 375px) {
+	.footer-painting-info-paining-name {
+		font-size: clamp(0px, 3.7333vw, 14px);
+		
+	}
+}
+
+
+
+.footer-painting-info-artist-name{
+	font-size: 13px;
+}
+@media (max-width: 769px) {
+	.footer-painting-info-artist-name {
+		font-size: clamp(0px, 1.6927vw, 13px);
+	
+	}
+}
+@media (max-width: 480px) {
+	.footer-painting-info-artist-name {
+		font-size: 10px;
+	
+	}
+}
+
+
+
+
+
+.footer-slideshowControl {
+  // background-color: rgb(244, 248, 154);
+  height: 24px;
+  width: 90.69px;
+
+  margin-right: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+
+}
+
+@media (max-width: 1440px) {
+  .footer-slideshowControl {
+    margin-right: clamp(0px, 2.7778vw, 40px);
+  }
+}
+@media (max-width: 1024px) {
+  .footer-slideshowControl {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-slideshowControl {
+    margin-right: clamp(0px, 5.2083vw ,40px);
+		height: clamp(0px, 3.125vw, 24px);
+  width: clamp(0px, 12.2154vw, 90.69px);
+  }
+}
+@media (max-width: 480px) {
+  .footer-slideshowControl {
+
+		height: 16px;
+		width: 56.8px;
+		
+    margin-right: 24px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .footer-slideshowControl {
+
+		height: 16px;
+		width: 56.8px;
+
+    margin-right: clamp(0px, 6.4vw, 24px);
+  }
+}
+
+.leftArrow, .rightArrow{
+  height: 100%;
+	// transition: opacity 0.2s ease-out;
+}
+
+@media(min-width:1024px){
+
+	.leftArrow:hover, .rightArrow:hover{
+		opacity: 0.5;
+	}
+}
+

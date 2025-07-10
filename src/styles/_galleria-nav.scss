@@ -1,0 +1,170 @@
+.galleria-nav {
+  position: relative;
+}
+
+.galleria-nav-link-image {
+  position: absolute;
+}
+
+.galleria-nav-link-painting-name {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+@media (max-width: 1440px) {
+  .galleria-nav-link-painting-name {
+    font-size: clamp(0px, 1.6667vw, 24px);
+  }
+}
+@media (max-width: 1024px) {
+  .galleria-nav-link-painting-name {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .galleria-nav-link-painting-name {
+    font-size: clamp(0px, 3.125vw, 24px);
+  }
+}
+
+@media (max-width: 480px) {
+  .galleria-nav-link-painting-name {
+    font-size: 24px;
+  }
+}
+@media (max-width: 375px) {
+  .galleria-nav-link-painting-name {
+    font-size: clamp(0px, 6.4vw, 24px);
+  }
+}
+
+.galleria-nav-link-painting-artist-name {
+  margin: 0;
+
+  font-size: 13px;
+
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.7528);
+}
+
+@media (max-width: 1440px) {
+  .galleria-nav-link-painting-artist-name {
+    font-size: clamp(0px, 0.9028vw, 13px);
+  }
+}
+@media (max-width: 1024px) {
+  .galleria-nav-link-painting-artist-name {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .galleria-nav-link-painting-artist-name {
+    font-size: clamp(10px, 1.6927vw, 13px);
+  }
+}
+
+@media (max-width: 480px) {
+  .galleria-nav-link-painting-artist-name {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .galleria-nav-link-painting-artist-name {
+    font-size: clamp(0px, 3.4667vw, 13px);
+  }
+}
+
+.galleria-nav-link-image-gradient {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  gap: clamp(0px, 0.4167vw, 6px);
+
+  font-family: "Libre Baskerville", serif;
+  box-sizing: border-box;
+  color: white;
+
+  padding-left: clamp(0px, 2.2222vw, 32px);
+  padding-right: clamp(0px, 2.2222vw, 32px);
+  padding-bottom: clamp(0px, 2.2916vw, 33px);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  height: clamp(0px, 11.8056vw, 170px);
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.85)
+  );
+}
+
+@media (max-width: 1024px) {
+  .galleria-nav-link-image-gradient {
+    gap: 6px;
+
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 33px;
+
+    height: 170px;
+  }
+}
+
+@media (max-width: 768px) {
+  .galleria-nav-link-image-gradient {
+    gap: clamp(0px, 0.7813vw, 6px);
+
+    padding-left: clamp(0px, 4.1667vw, 32px);
+    padding-right: clamp(0px, 4.1667vw, 32px);
+    padding-bottom: clamp(0px, 4.2917vw, 33px);
+
+    height: clamp(0px, 22.1354vw, 170px);
+  }
+}
+
+@media (max-width: 480px) {
+  .galleria-nav-link-image-gradient {
+    gap: 7px;
+
+    padding-left: 32px;
+    padding-right: 49px;
+    padding-bottom: 32px;
+
+    height: 170px;
+  }
+}
+
+@media (max-width: 375px) {
+  .galleria-nav-link-image-gradient {
+    gap: clamp(0px, 1.8667vw, 7px);
+
+    padding-left: clamp(0px, 8.5333vw, 32px);
+    padding-right: clamp(0px, 13.0667vw, 49px);
+    padding-bottom: clamp(0px, 8.5333vw, 32px);
+
+    height: clamp(0px, 45.3333vw, 170px);
+  }
+}
+
+.shadow {
+  position: absolute;
+  transition: background-color 0.3s ease-in-out;
+  // background-color: rgba(21, 5, 5, 0.49);
+}
+
+@media (min-width: 1024px) {
+  .shadow:hover {
+    background-color: rgb(255, 255, 255, 0.49);
+  }
+}

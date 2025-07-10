@@ -1,0 +1,51 @@
+
+.slideshow-link {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2.57px;
+  color: #7d7d7d;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+
+
+
+
+@media (max-width: 768px) {
+	.slideshow-link {
+
+		// font-size: 12px;
+		font-size: clamp(10px,  1.5625vw, 12px);
+
+		// letter-spacing: 2.57px;
+		letter-spacing: clamp(0px, 0.3346vw , 2.57px);
+	}
+}
+
+
+
+
+@media (max-width: 480px) {
+	.slideshow-link {
+		font-size: 9px;
+		font-weight: 600;
+		letter-spacing: 1.93px;
+	}
+}
+
+
+
+
+
+.slideshow-link:hover {
+  color: black;
+
+  transition: none;
+}	
+
+@media (max-width: 1024px) {
+  .slideshow-link:hover {
+    color: #7d7d7d;
+  }	
+}	
+

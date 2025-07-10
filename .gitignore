@@ -1,0 +1,26 @@
+# Ignore node_modules folder completely
+node_modules/
+
+# Ignore build or cache folders (optional but recommended)
+.cache/
+dist/
+build/
+
+# Ignore environment variables
+.env
+
+# Ignore logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore editor configs
+.vscode/
+.idea/
+
+# Ignore your dev notes file (keep it if you want)
+src/dev-notes.txt

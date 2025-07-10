@@ -1,0 +1,320 @@
+
+.painting-artist-info-section {
+
+
+  position: relative;
+
+
+	z-index: 200;
+}
+
+
+// @media (max-width: 480px) {
+// 	.painting-artist-info-section {
+
+
+// }
+
+// @media (max-width: 1024px) {
+//   .painting-artist-info-section {
+  
+// justify-content: flex-start;
+  
+//     padding-left: 30px;
+		
+// 		padding-top: 236px;
+//   }
+// }
+
+// @media (max-width: 768px) {
+// 	.painting-artist-info-section {
+		
+// 		padding-left: clamp(0px, 3.9063vw, 30px);
+// 		padding-top: clamp(0px, 30.7291vw, 236px);
+//   }
+// }
+
+// @media (max-width: 480px) {
+// 	.painting-artist-info-section {
+
+// 		padding-top: 48px;
+// 		padding-left:16px;
+// 	}
+// }
+// @media (max-width: 375px) {
+// 	.painting-artist-info-section {
+	
+// 		padding-top: clamp(0px, 12.8vw, 48px);
+// 		padding-left: clamp(0px, 4.2667vw, 16px);
+// 	}
+// }
+
+.painting-artist-info-section-content-wrapper{
+	position: absolute;
+background-color: transparent;
+top: -1px;
+left: clamp(-64px, -4.4444vw, 0px);
+
+
+ display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+	height:  clamp(0px, 43.3333vw, 624px);
+}
+
+
+@media (max-width: 1024px) {
+  .painting-artist-info-section-content-wrapper{
+  top: -2px;
+    left: -232px;
+		justify-content: flex-start;
+    height: 560px;
+}}
+
+@media (max-width: 768px) {
+  .painting-artist-info-section-content-wrapper{
+  top: clamp(-2px, -0.2604vw, 0px);
+    left: clamp(-232px, -30.2083vw, 0px);
+		justify-content: flex-start;
+    height: clamp(0px, 72.9167vw,  560px);
+	}
+	
+}
+@media (max-width: 480px) {
+	.painting-artist-info-section-content-wrapper{
+		
+		top:auto;
+		left: -1px;
+		bottom: 0;
+		justify-content: flex-start;
+		// height: clamp(0px, 72.9167vw,  560px);
+height: auto;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.painting-artist-captions-wrapper {
+  width: clamp(0px, 30.9028vw, 445px);
+  // height: clamp(0px, 16.5278vw, 238px);
+  background-color: #fff;
+  // top: -1px;
+  // left: clamp(-64px, -4.4444vw, 0px);
+
+  padding-left: clamp(0px, 4.5139vw, 65px);
+  padding-bottom: clamp(0px, 4.6528vw, 67px);
+	
+	z-index: 200;
+}
+
+@media (max-width: 1024px) {
+	.painting-artist-captions-wrapper {
+		width: 445px;
+  
+    // top: -2px;
+    // left: -232px;
+		
+    padding-left: 65px;
+		padding-bottom: 67px;
+  }
+}
+
+
+@media (max-width: 768px) {
+	.painting-artist-captions-wrapper {
+    width: clamp(0px, 57.9427vw, 445px);
+
+    // top: clamp(-2px, -0.2604vw, 0px);
+
+    // left: clamp(-232px, -30.2083vw, 0px);
+
+    padding-left: clamp(0px, 8.4635vw, 65px);
+    padding-bottom: clamp(0px, 8.724vw, 67px);
+  }
+}
+
+
+
+@media (max-width: 480px) {
+	.painting-artist-captions-wrapper {
+		width: 280px;
+    // height: 133px;
+    // top: -85px;
+		
+    // left: -1px;
+		
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-right: 24px;
+		padding-bottom: 24px;
+  }
+}
+
+
+
+
+@media (max-width: 375px) {
+	.painting-artist-captions-wrapper {
+		width: clamp(0px, 74.6667vw, 280px);
+		
+		
+    padding-left: clamp(0px, 6.4vw, 24px);
+    padding-top: clamp(0px, 6.4vw, 24px);
+    padding-right: clamp(0px, 6.4vw, 24px);
+		padding-bottom: clamp(0px, 6.4vw, 24px);
+	}}
+
+
+
+
+
+.painting-name {
+  font-family: "Libre Baskerville", serif;
+  font-size: clamp(0px, 3.8889vw, 56px);
+  line-height: clamp(0px, 4.4444vw, 64px);
+  margin: 0;
+  /* width: 380px; */
+  // width: 370px; 
+  width: clamp(0px, 25.1389vw,362px); 
+	user-select: text;
+	
+}
+
+@media (max-width: 1024px) {
+	.painting-name {
+		font-size: 56px;
+    line-height: 64px;
+		
+		width: 362px; 
+		
+  }
+}
+
+@media (max-width: 768px) {
+	.painting-name {
+		font-size: clamp(0px, 7.2917vw, 56px);
+    line-height: clamp(0px, 8.3333vw, 64px);
+		width: clamp(0px, 47.1354vw, 362px); 
+		
+		
+  }
+}
+
+@media (max-width: 480px) {
+	.painting-name {
+		font-size: 24px;
+    line-height: 29px;
+		width: 235px; 
+  }
+}
+
+@media (max-width: 375px) {
+	.painting-name {
+		font-size: clamp(0px, 6.4vw, 24px);
+    line-height: clamp(0px, 7.7333vw, 29px);
+		width: clamp(0px, 62.6667vw, 235px); 
+  }
+}
+
+
+
+
+.artist-name {
+  font-family: "Libre Baskerville", serif;
+	margin: 0;
+  margin-top: clamp(0px, 1.6667vw, 24px);
+  color: #7d7d7d;
+  font-size: 15px;
+	user-select: text;
+}
+
+@media (max-width: 1024px) {
+  .artist-name {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .artist-name {
+    margin-top: clamp(0px, 3.125vw, 24px);
+  }
+}
+
+@media (max-width: 480px) {
+  .artist-name {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 375px) {
+  .artist-name {
+    margin-top: clamp(0px, 2.1333vw, 8px);
+  }
+}
+
+
+
+
+.artist-portrait-img {
+  max-width: clamp(0px, 8.8889vw, 128px);
+
+	// margin-top: clamp(0px, 18.125vw,  261px);
+margin-left: clamp(0px, 6.5277vw,   94px);
+
+height: auto;
+display: block;
+}
+
+@media (max-width: 1024px) {
+	.artist-portrait-img{
+		max-width: 128px;
+		
+		margin-left: 262px;
+  }
+}
+
+@media (max-width: 768px) {
+	.artist-portrait-img{
+		max-width: clamp(0px, 16.6667vw, 128px);
+		
+		
+		
+		margin-left: clamp(0px, 34.1146vw, 262px);
+		
+		
+  }
+}
+
+@media (max-width: 480px) {
+	.artist-portrait-img{
+		max-width: 64px;
+		margin-left: 16px;
+  }
+}
+
+
+
+
+@media (max-width: 375px) {
+	.artist-portrait-img{
+		max-width: clamp(0px, 17.0667vw, 64px);
+		margin-left: clamp(0px, 4.2667vw, 16px);
+  }
+}
+
+
+
+
+

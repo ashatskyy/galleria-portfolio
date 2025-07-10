@@ -1,0 +1,47 @@
+.upper-hr {
+  max-width: 1360px;
+	width: 100%;
+  margin: 0 auto;
+  // background-color: #E5E5E5;
+  // background-color: green;
+	border-top: 1px solid #E5E5E5;
+	// border-top: 100px solid black;
+
+	position: absolute;
+	// left:0;
+bottom: 0;
+}
+
+@media (max-width: 1440px) {
+  .upper-hr {
+    width: 94.44%;
+  }
+}
+@media (max-width: 1024px) {
+  .upper-hr {
+    max-width: 689px;
+  }
+}
+
+@media (max-width: 768px) {
+  .upper-hr {
+    width: 100%;
+		left:0;
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 480px) {
+	.upper-hr {
+		left:auto;
+    max-width: 327px;
+  }
+}
+
+@media (max-width: 375px) {
+  .upper-hr {
+    width: 100%;
+		left:0;
+    max-width: 375px;
+  }
+}

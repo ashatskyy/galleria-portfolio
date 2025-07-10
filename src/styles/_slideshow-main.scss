@@ -1,0 +1,111 @@
+.slideshow-main {
+  // background-color: rgb(160, 233, 160);
+
+  max-width: 1440px;
+
+  width: 100%;
+
+  margin: 0 auto;
+
+
+  padding-top: 228px;
+	padding-bottom: 75px;
+
+  padding-left: 40px;
+  padding-right: 40px;
+
+  display: grid;
+position: relative;
+
+  grid-template-columns: 1fr 0.8631fr 1fr;
+
+  // height: 799px;
+  height: 1010px;
+}
+
+@media (max-width: 1440px) {
+  .slideshow-main {
+  
+		padding-top: clamp(0px, 15.8333vw, 228px);
+
+    padding-left: clamp(0px, 2.7778vw, 40px);
+    padding-right: clamp(0px, 2.7778vw, 40px);
+    padding-bottom: clamp(0px, 5.2083vw, 75px);
+
+
+		height: clamp(0px, 70.1388vw, 1010px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .slideshow-main {
+    max-width: 768px;
+
+    padding-top: 128px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+		// padding-bottom: 81px;
+		// padding-bottom: 53px;
+		padding-bottom: 25px;
+
+		grid-template-columns: 475px 1fr;
+		// grid-template-rows: repeat(2, auto);
+		// grid-template-rows: repeat(2, auto);
+		grid-template-rows: 560px 1fr;
+
+		height: 1275px;
+		
+  }
+}
+
+@media (max-width: 768px) {
+  .slideshow-main {
+    padding-top: clamp(0px, 16.6667vw, 128px);
+    padding-left: clamp(0px, 5.2083vw, 40px);
+    padding-right: clamp(0px, 5.2083vw, 40px);
+
+		// padding-bottom: clamp(0px, 10.5469vw, 81px);
+		padding-bottom: clamp(0px, 3.2552vw, 25px);
+
+		grid-template-columns: clamp(0px, 61.8489vw, 475px) 1fr;
+		grid-template-rows: clamp(0px, 72.9167vw, 560px) 1fr;
+
+		height: clamp(0px, 166.0156vw, 1275px);
+  }
+}
+
+
+
+
+@media (max-width: 480px) {
+  .slideshow-main {
+    max-width: 375px;
+
+    padding-top: 103px;
+    padding-left: 24px;
+    padding-right: 24px;
+		padding-bottom: 95px;
+
+		grid-template-columns: 1fr;
+		grid-template-rows: 280px 117px 1fr;
+		
+		height: 1087px;
+
+  }
+}
+
+
+@media (max-width: 375px) {
+  .slideshow-main {
+    max-width: 375px;
+
+    padding-top: clamp(0px, 27.4646vw, 103px);
+    padding-left: clamp(0px, 6.4vw, 24px);
+    padding-right: clamp(0px, 6.4vw, 24px);
+
+		padding-bottom:clamp(0px, 25.3333vw, 95px);
+		grid-template-rows: clamp(0px, 74.6667vw, 280px) clamp(0px, 31.2vw, 117px) 1fr;
+		height: clamp(0px, 289.8667vw, 1087px);
+  }
+}

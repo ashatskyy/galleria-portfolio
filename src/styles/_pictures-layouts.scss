@@ -1,0 +1,763 @@
+.starry-night {
+  top: 0;
+  left: 0;
+
+  width: 310px;
+  aspect-ratio: 310 / 250;
+
+  @media (max-width: 1440px) {
+    width: clamp(0px, 21.5278vw, 310px);
+    aspect-ratio: 310 / 250;
+  }
+
+  @media (max-width: 1024px) {
+    width: 324px;
+    aspect-ratio: 324 / 250;
+  }
+
+  @media (max-width: 768px) {
+    width: clamp(0px, 42.1875vw, 324px);
+    aspect-ratio: 324 / 250;
+  }
+
+  @media (max-width: 480px) {
+    width: 327px;
+    aspect-ratio: 327 / 250;
+  }
+
+  @media (max-width: 375px) {
+    width: clamp(0px, 87.2vw, 327px);
+    aspect-ratio: 327 / 250;
+  }
+}
+
+.girl-with-a-pearl-earring {
+  top: 0;
+  left: 350px;
+
+  width: 310px;
+  aspect-ratio: 310 / 400;
+
+  @media (max-width: 1440px) {
+    top: 0;
+    left: clamp(0px, 24.3056vw, 350px);
+
+    width: clamp(0px, 21.5278vw, 310px);
+    aspect-ratio: 310 / 400;
+  }
+
+  @media (max-width: 1024px) {
+    top: 0;
+    left: 364px;
+
+    width: 324px;
+    aspect-ratio: 324 / 400;
+  }
+
+  @media (max-width: 768px) {
+    top: 0;
+    left: clamp(0px, 47.4102vw, 364px);
+
+    width: clamp(0px, 42.1875vw, 324px);
+    aspect-ratio: 324 / 400;
+  }
+
+  @media (max-width: 480px) {
+    top: 274px;
+    left: 0;
+
+    width: 327px;
+    aspect-ratio: 327 / 400;
+  }
+
+  @media (max-width: 375px) {
+    top: clamp(0px, 73.0667vw, 274px);
+    left: 0;
+
+    width: clamp(0px, 87.2vw, 327px);
+    aspect-ratio: 327 / 400;
+  }
+}
+
+.guernica {
+  top: 0;
+
+  left: 700px;
+
+  width: 310px;
+  aspect-ratio: 310 / 285;
+
+  @media (max-width: 1440px) {
+    top: 0;
+
+    left: clamp(0px, 48.6111vw, 700px);
+
+    width: clamp(0px, 21.5278vw, 310px);
+    aspect-ratio: 310 / 285;
+  }
+
+  @media (max-width: 1024px) {
+    top: 290px;
+    left: 0;
+
+    width: 324px;
+    aspect-ratio: 324 / 285;
+  }
+
+  @media (max-width: 768px) {
+    top: clamp(0px, 37.7604vw, 290px);
+    left: 0;
+
+    width: clamp(0px, 42.1875vw, 324px);
+    aspect-ratio: 324 / 285;
+  }
+
+  @media (max-width: 480px) {
+    top: 698px;
+    left: 0;
+
+    width: 327px;
+    aspect-ratio: 327 / 285;
+  }
+
+  @media (max-width: 375px) {
+    top: clamp(0px, 186.1333vw, 698px);
+    left: 0;
+    width: clamp(0px, 87.2vw, 327px);
+    aspect-ratio: 327 / 285;
+  }
+}
+
+.penitent-magdalene {
+  top: 0;
+
+  left: 1050px;
+
+  width: 310px;
+  aspect-ratio: 310 / 250;
+
+  @media (max-width: 1440px) {
+    left: clamp(0px, 72.9167vw, 1050px);
+
+    width: clamp(0px, 21.5278vw, 310px);
+    aspect-ratio: 310 / 250;
+  }
+
+  @media (max-width: 1024px) {
+    top: 440px;
+    left: 364px;
+
+    width: 324px;
+    aspect-ratio: 324 / 250;
+  }
+
+  @media (max-width: 768px) {
+    top: clamp(0px, 57.2916vw, 440px);
+
+    left: clamp(0px, 47.4102vw, 364px);
+
+    width: clamp(0px, 42.1875vw, 324px);
+    aspect-ratio: 324 / 250;
+  }
+
+  @media (max-width: 480px) {
+    top: 1007px;
+    left: 0;
+
+    width: 327px;
+    aspect-ratio: 327 / 250;
+  }
+
+  @media (max-width: 375px) {
+    top: clamp(0px, 268.5333vw, 1007px);
+    left: 0;
+
+    width: clamp(0px, 87.2vw, 327px);
+    aspect-ratio: 327 / 250;
+  }
+}
+
+.the-storm-on-the-sea-of-galilee {
+  top: 290px;
+  left: 0;
+
+  width: 310px;
+  aspect-ratio: 310 / 340;
+
+  @media (max-width: 1440px) {
+    top: clamp(0px, 20.1389vw, 290px);
+    left: 0;
+
+    width: clamp(0px, 21.5278vw, 310px);
+    aspect-ratio: 310 / 340;
+  }
+
+  @media (max-width: 1024px) {
+    top: 615px;
+    left: 0;
+
+    width: 324px;
+    aspect-ratio: 324 / 340;
+  }
+
+  @media (max-width: 768px) {
+    top: clamp(0px, 80.0781vw, 615px);
+    left: 0;
+
+    width: clamp(0px, 42.1875vw, 324px);
+    aspect-ratio: 324 / 340;
+  }
+
+  @media (max-width: 480px) {
+    top: 1281px;
+    left: 0;
+
+    width: 327px;
+    aspect-ratio: 327 / 340;
+  }
+
+  @media (max-width: 375px) {
+    top: clamp(0px, 341.6vw, 1281px);
+    left: 0;
+
+    width: clamp(0px, 87.2vw, 327px);
+    aspect-ratio: 327 / 340;
+  }
+}
+
+
+
+.the-great-wave-off-kanagawa {
+  top: 440px;
+  left: 350px;
+
+  width: 310px;
+	aspect-ratio: 310 / 280;
+
+  @media (max-width: 1440px) {
+    top: clamp(0px, 30.5556vw, 440px);
+    left: clamp(0px, 24.3056vw, 350px);
+
+    width: clamp(0px, 21.5278vw, 310px);
+    aspect-ratio: 310 / 280;
+  }
+
+  @media (max-width: 1024px) {
+    top: 730px;
+    left: 364px;
+
+    width: 324px;
+    aspect-ratio: 324 / 280;
+  }
+
+
+  @media (max-width: 768px) {
+    top: clamp(0px, 95.0521vw, 730px);
+    left: clamp(0px, 47.3958vw, 364px);
+
+    width: clamp(0px, 42.1875vw, 324px);
+    aspect-ratio: 324 / 280;
+  }
+
+  @media (max-width: 480px) {
+    top: 1645px;
+    left: 0;
+
+    width: 327px;
+    aspect-ratio: 327 / 280;
+  }
+
+  @media (max-width: 375px) {
+    top: clamp(0px, 438.6667vw, 1645px);
+    left: 0;
+
+    width: clamp(0px, 87.2vw, 327px);
+    aspect-ratio: 327 / 280;
+  }
+}
+
+
+
+.van-gogh-self-portrait {
+  top: 325px;
+
+  left: 700px;
+
+  width: 310px;
+  aspect-ratio:  310/ 500;
+
+  @media (max-width: 1440px) {
+		top: clamp(0px, 22.5694vw, 325px);
+		left: clamp(0px, 48.6111vw, 700px);
+
+    width: clamp(0px, 21.5278vw, 310px);
+		aspect-ratio:  310/ 500;
+  }
+
+  @media (max-width: 1024px) {
+    top: 995px;
+    left: 0;
+
+    width: 324px;
+    aspect-ratio: 324 / 500;
+  }
+
+  @media (max-width: 768px) {
+    top: clamp(0px, 129.5572vw, 995px);
+
+    left: 0;
+
+    width: clamp(0px, 42.1875vw, 324px);
+		aspect-ratio: 324 / 500;
+  }
+
+  @media (max-width: 480px) {
+    top: 1949px;
+    left:0;
+
+    width: 327px;
+    aspect-ratio:  327/500;
+  }
+
+  @media (max-width: 375px) {
+    top: clamp(0px, 519.7333vw,  1949px);
+    left: 0;
+
+		width: clamp(0px, 87.2vw, 327px);
+    aspect-ratio:  327/ 500;
+  }
+}
+
+.the-sleeping-gypsy {
+  top: 290px;
+
+  left: 1050px;
+
+  width: 310px;
+	aspect-ratio: 310 / 250;
+
+  @media (max-width: 1440px) {
+    top: clamp(0px, 20.1389vw, 290px);
+    left: clamp(0px, 72.9167vw, 1050px);
+
+    width: clamp(0px, 21.5278vw, 310px);
+    aspect-ratio: 310 / 250;
+  }
+
+  @media (max-width: 1024px) {
+    top: 1050px;
+		left: 364px;
+
+		width: 324px;
+    aspect-ratio: 324 / 250;
+  }
+
+  @media (max-width: 768px) {
+    top: clamp(0px, 136.7188vw, 1050px);
+    left: clamp(0px, 47.3958vw, 364px);
+
+    width: clamp(0px, 42.1875vw, 324px);
+    aspect-ratio: 324 / 250;
+  }
+
+  @media (max-width: 480px) {
+    top: 2473px;
+    left: 0;
+
+    width: 327px;
+		aspect-ratio: 327 / 250;
+  }
+
+  @media (max-width: 375px) {
+    top: clamp(0px, 659.4667vw, 2473px);
+    left: 0;
+
+		width: clamp(0px, 87.2vw, 327px);
+    aspect-ratio: 327 / 250;
+  }
+}
+
+.lady-with-an-ermine{
+  top: 670px;
+
+  left: 0px;
+
+  width: 310px;
+  aspect-ratio: 310 / 420;
+
+  @media (max-width: 1440px) {
+ top:  clamp(0px, 46.5278vw, 670px);
+    left: 0;
+
+		width: clamp(0px, 21.5278vw, 310px);
+    aspect-ratio: 310 / 420;
+  }
+
+  @media (max-width: 1024px) {
+    top: 1535px;
+    left: 0;
+
+    width: 324px;
+    aspect-ratio: 324 / 420;
+  }
+
+  @media (max-width: 768px) {
+    top: clamp(0px, 199.8698vw, 1535px);
+
+    left: 0;
+
+    width: clamp(0px, 42.1875vw, 324px);
+    aspect-ratio: 324 / 420;
+  }
+
+  @media (max-width: 480px) {
+    top: 2747px;
+    left: 0;
+
+    width: 327px;
+    aspect-ratio:  327/ 420;
+  }
+
+  @media (max-width: 375px) {
+    top: clamp(0px, 732.5333vw, 2747px);
+    left: 0;
+
+    width: clamp(0px, 87.2vw, 327px);
+    aspect-ratio:  327/ 420;
+  }
+}
+
+.the-night-cafe{
+  top: 760px;
+
+  left: 350px;
+
+  width: 310px;
+  aspect-ratio:  310/260;
+
+  @media (max-width: 1440px) {
+ top: clamp(0px, 52.7778vw, 760px);
+ left: clamp(0px, 24.3056vw, 350px);
+
+ width: clamp(0px, 21.5278vw, 310px);
+ aspect-ratio:  310/260;
+  }
+
+  @media (max-width: 1024px) {
+    top: 1340px;
+    left: 364px;
+
+    width: 324px;
+    aspect-ratio:  324/260 ;
+  }
+
+  @media (max-width: 768px) {
+    top: clamp(0px, 174.4791vw, 1340px);
+
+    left: clamp(0px, 47.3958vw, 364px);
+
+		width: clamp(0px, 42.1875vw, 324px);
+    aspect-ratio:  324/260;
+  }
+
+  @media (max-width: 480px) {
+    top: 3191px;
+    left: 0;
+
+    width: 327px;
+    aspect-ratio:  327/260 ;
+  }
+
+  @media (max-width: 375px) {
+    top: clamp(0px, 850.9334vw, 3191px);
+    left: 0;
+
+		width: clamp(0px, 87.2vw, 327px);
+    aspect-ratio:  327/ 260;
+  }
+}
+
+.the-basket-of-apples{
+  top: 580px;
+
+  left: 1050px;
+
+  width: 310px;
+  aspect-ratio:  310/430;
+
+  @media (max-width: 1440px) {
+ top: clamp(0px, 40.2778vw, 580px);
+ left: clamp(0px, 72.9167vw, 1050px);
+
+ width: clamp(0px, 21.5278vw, 310px);
+ aspect-ratio: 310 / 430;
+  }
+
+  @media (max-width: 1024px) {
+    top: 1640px;
+    left: 364px;
+
+    width: 324px;
+    aspect-ratio:  324/ 430;
+  }
+
+  @media (max-width: 768px) {
+    top: clamp(0px, 213.5417vw, 1640px);
+
+    left: clamp(0px, 47.3958vw, 364px);
+
+		width: clamp(0px, 42.1875vw, 324px);
+    aspect-ratio:  324/430;
+  }
+
+  @media (max-width: 480px) {
+    top: 3475px;
+    left: 0;
+
+    width: 327px;
+    aspect-ratio:  327/430;
+  }
+
+  @media (max-width: 375px) {
+    top: clamp(0px, 926.6667vw, 3475px);
+    left: 0;
+
+    width: clamp(0px, 87.2vw, 327px);
+    aspect-ratio:  327/ 430;
+  }
+}
+
+.the-boy-in-the-red-vest{
+	top: 1130px;
+
+  left: 0;
+
+  width: 310px;
+  aspect-ratio:  310/ 260;
+
+  @media (max-width: 1440px) {
+ top: clamp(0px, 78.47222vw, 1130px);
+    left: 0;
+
+		width: clamp(0px, 21.5278vw, 310px);
+    aspect-ratio: 310 / 260;
+  }
+
+  @media (max-width: 1024px) {
+    top: 1995px;
+    left: 0;
+
+    width: 324px;
+    aspect-ratio: 324 / 260;
+  }
+
+  @media (max-width: 768px) {
+    top: clamp(0px, 259.7656vw, 1995px);
+
+    left: 0;
+
+    width: clamp(0px, 42.1875vw, 324px);
+    aspect-ratio: 324 / 260;
+  }
+
+  @media (max-width: 480px) {
+    top: 3929px;
+    left: 0;
+
+		width: 327px;
+    aspect-ratio:  327/260;
+  }
+
+  @media (max-width: 375px) {
+    top: clamp(0px, 1047.7333vw, 3929px);
+    left: 0;
+
+		width: clamp(0px, 87.2vw, 327px);
+    aspect-ratio:  327/ 260;
+  }
+}
+
+  
+
+.arnolfini-portrait{
+	top: 1060px;
+
+  left: 350px;
+
+  width: 310px;
+  aspect-ratio:  310/330;
+
+  @media (max-width: 1440px) {
+ top: clamp(0px, 73.6111vw, 1060px);
+ left: clamp(0px, 24.3056vw, 350px);
+
+ width: clamp(0px, 21.5278vw, 310px);
+ aspect-ratio:  310/330;
+  }
+
+  @media (max-width: 1024px) {
+    top: 2110px;
+    left: 364px;
+
+    width: 324px;
+    aspect-ratio:  324/ 330;
+  }
+
+  @media (max-width: 768px) {
+    top: clamp(0px, 274.7395vw, 2110px);
+
+    left: clamp(0px, 47.3958vw, 364px);
+
+    width: clamp(0px, 42.1875vw, 324px);
+    aspect-ratio:  324/330;
+  }
+
+  @media (max-width: 480px) {
+    top: 4213px;
+    left: 0;
+
+    width: 327px;
+    aspect-ratio:  327/330;
+  }
+
+  @media (max-width: 375px) {
+    top: clamp(0px, 1123.4667vw, 4213px);
+    left: 0;
+
+		width: clamp(0px, 87.2vw, 327px);
+    aspect-ratio:  327/ 330;
+  }
+}
+
+.mona-lisa{
+	top: 865px;
+
+  left: 700px;
+
+	width: 310px;
+  aspect-ratio:  310/ 525;
+
+  @media (max-width: 1440px) {
+    top: clamp(0px, 60.0694vw, 865px);
+   	left: clamp(0px, 48.6111vw, 700px);
+
+    width: clamp(0px, 21.5278vw, 310px);
+		aspect-ratio:  310/ 525;
+  }
+
+  @media (max-width: 1024px) {
+    top: 2295px;
+    left: 0;
+
+    width: 324px;
+    aspect-ratio: 324 / 525;
+  }
+
+  @media (max-width: 768px) {
+    top: clamp(0px, 298.8281vw, 2295px);
+
+    left: 0;
+
+    width: clamp(0px, 42.1875vw, 324px);
+    aspect-ratio: 324 / 525;
+  }
+
+  @media (max-width: 480px) {
+    top: 4567px;
+    left: 0;
+
+    width: 327px;
+    aspect-ratio:  327/525;
+  }
+
+  @media (max-width: 375px) {
+    top: clamp(0px, 1217.8667vw, 4567px);
+    left: 0;
+
+		width: clamp(0px, 87.2vw, 327px);
+    aspect-ratio:  327/ 525;
+  }
+}
+
+.the-swing{
+	top: 1050px;
+
+  left: 1050px;
+
+  width: 310px;
+  aspect-ratio:  310/340;
+
+  @media (max-width: 1440px) {
+ top: clamp(0px, 72.9167vw, 1050px);
+    left: clamp(0px, 72.9167vw, 1050px);
+
+    width: clamp(0px, 21.5278vw, 310px);
+ aspect-ratio: 310 / 340;
+  }
+
+  @media (max-width: 1024px) {
+    top: 2480px;
+    left: 364px;
+
+		width: 324px;
+    aspect-ratio:  324/ 340;
+  }
+
+  @media (max-width: 768px) {
+    top: clamp(0px, 322.9167vw, 2480px);
+
+    left: clamp(0px, 47.3958vw, 364px);
+
+    width: clamp(0px, 42.1875vw, 324px);
+    aspect-ratio:  324/340;
+  }
+
+  @media (max-width: 480px) {
+    top: 5116px;
+    left: 0;
+
+    width: 327px;
+    aspect-ratio:  327/ 340;
+  }
+
+  @media (max-width: 375px) {
+    top: clamp(0px, 1364.2666vw, 5116px);
+    left: 0;
+
+		width: clamp(0px, 87.2vw, 327px);
+    aspect-ratio:  327/ 340;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

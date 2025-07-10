@@ -1,0 +1,94 @@
+.galleria-main {
+  
+
+  max-width: 1440px;
+
+  width: 100%;
+
+  margin: 0 auto;
+
+  padding-top: 168px;
+
+
+
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+
+	
+  height: 1598px;
+}
+
+@media (max-width: 1440px) {
+  .galleria-main {
+    padding-top: clamp(0px, 11.6667vw, 168px);
+    // padding-top: 168px;
+
+
+    padding-left: clamp(0px, 2.7778vw, 40px);
+    padding-right: clamp(0px, 2.7778vw, 40px);
+    padding-bottom: clamp(0px, 2.7778vw, 40px);
+
+    height: clamp(0px, 110.9722vw, 1590px);
+ 
+  }
+}
+
+@media (max-width: 1024px) {
+  .galleria-main {
+    max-width: 768px;
+
+    padding-top: 128px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+
+		
+    height: 2988px;
+  }
+}
+
+@media (max-width: 768px) {
+  .galleria-main {
+    // padding-top: clamp(0px, 5.0891vw, 40px);
+    padding-top: clamp(0px, 16.6667vw, 128px);
+
+    padding-left: clamp(0px, 5.0891vw, 40px);
+    padding-right: clamp(0px, 5.0891vw, 40px);
+    padding-bottom: clamp(0px, 5.0891vw, 40px);
+
+
+		height: clamp(0px, 388.5565vw, 2988px);
+  }
+}
+
+@media (max-width: 480px) {
+  .galleria-main {
+    max-width: 375px;
+
+
+    padding-top: 103px;
+
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+
+		height: 5583px;
+  }
+}
+
+@media (max-width: 375px) {
+  .galleria-main {
+    max-width: 375px;
+
+    padding-top: clamp(0px, 27.4667vw, 103px);
+
+    padding-left: clamp(0px, 6.4vw, 24px);
+    padding-right: clamp(0px, 6.4vw, 24px);
+    padding-bottom: clamp(0px, 6.4vw, 24px);
+
+
+    height: clamp(0px, 1488.8vw, 5583px);
+  }
+}

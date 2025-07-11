@@ -3,7 +3,12 @@ import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
-import { Helmet } from 'react-helmet';
+// import { useParams } from "react-router-dom";
+// import { Helmet } from 'react-helmet';
+
+// import { BrowserRouter as Router } from "react-router-dom";
+// import { HelmetProvider } from "react-helmet-async";
+// import { Helmet } from 'react-helmet-async';
 
 import galleriaData from "./data.json";
 
@@ -18,7 +23,15 @@ export function App() {
   );
 }
 
-
+// export function App() {
+//   return (
+//     <HelmetProvider>
+//       <Router>
+//         <AppRoutes />
+//       </Router>
+//     </HelmetProvider>
+//   );
+// }
 
 function AppRoutes() {
   const location = useLocation();
@@ -31,18 +44,22 @@ function AppRoutes() {
       <Routes location={background || location}>
         <Route path="/" element={<Home />} />
 
-        {galleriaData.map((item, index) => (
+        {/* {galleriaData.map((item, index) => ( */}
+        {galleriaData.map((item) => (
           <Route
-            key={index+100}
+            key={item.path}
             path={item.path}
             element={<SlidePage data={item} />}
+						// element={<SlidePage key={location.pathname} data={item} />}
+						// element={<SlidePage key={item.path} data={item} />}
           />
         ))}
 
    
-        {galleriaData.map((item, index) => (
+        {/* {galleriaData.map((item, index) => ( */}
+        {galleriaData.map((item) => (
           <Route
-            key={index + 1000}
+            key={item.path}
             path={item.path + "/view-image"}
             // element={<ViewImage pic={item.artist.images.show} />}
             element={<ViewImage dataPic={item} />}
@@ -53,9 +70,10 @@ function AppRoutes() {
      
       {background && (
         <Routes>
-          {galleriaData.map((item, index) => (
+          {/* {galleriaData.map((item, index) => ( */}
+          {galleriaData.map((item) => (
             <Route
-              key={index + 2000}
+              key={item.path}
               path={item.path + "/view-image"}
               element={
                 <div className="modal-overlay">
@@ -101,13 +119,22 @@ function Home() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <>
+		<>
+			{/* <Helmet>
+				<title>Galleria. Portfolio by Shatskyi Oleksandr. Masterpieces from Van Eyck to Picasso</title>
+        <meta name="description" content={`Explore 15 timeless painting masterpieces from Van Eyck to Picasso with short descriptions, image slideshows, and reference links.`} />
+				<meta property="og:title" content={`Galleria. Portfolio by Shatskyi Oleksandr. Masterpieces from Van Eyck to Picasso`} />
+        <meta property="og:description" content={`Explore 15 timeless painting masterpieces from Van Eyck to Picasso with short descriptions, image slideshows, and reference links.`} />
+			</Helmet> */}
+			<>
+			 <h1 className="visually-hidden">English Explanatory Dictionary</h1>
       <Header slideShowOrder="START SLIDESHOW" />
 			<main className="galleria-main">
         <nav className="galleria-nav">
-          {galleriaData.map((item, index) => (
+          {/* {galleriaData.map((item, index) => ( */}
+          {galleriaData.map((item) => (
 						<Link
-						key={index + 5000}
+						key={item.path}
               className="galleria-picture-link"
               to={item.path}
               style={{ textDecoration: "none" }}
@@ -117,7 +144,7 @@ function Home() {
           ))}
         </nav>
       </main>
-    
+    </>
     </>
   );
 }
@@ -173,16 +200,19 @@ function SlidePage({ data }) {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [location]);
-
+	}, [location]);
+	
+	// const { slug } = useParams();
+	// const data = galleriaData.find(item => item.path === '/' + slug);
 	return (
 		<>
-			 <Helmet>
+			 {/* <Helmet>
 				<title>{`Galleria. ${data.name}, ${data.year}`}</title>
         <meta name="description" content={data.alt} />
 				<meta property="og:title" content={`Galleria. ${data.name}, ${ data.year}`} />
         <meta property="og:description" content={data.alt} />
-			</Helmet>
+			</Helmet> */}
+
 		<>
 			
       <Header slideShowOrder="STOP SLIDESHOW" />

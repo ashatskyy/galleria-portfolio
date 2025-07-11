@@ -1,14 +1,8 @@
-
-import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { useEffect } from "react";
-import { useState } from "react";
-import { useLocation } from "react-router-dom";
-
-
+import { HashRouter as Router, Route, Routes, Link, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 import galleriaData from "./data.json";
 
-const serverDirName = "";
-// const serverDirName = "/galleria-portfolio";
+const serverDirName = ""; // or "/galleria-portfolio"
 
 export function App() {
   return (
@@ -18,8 +12,6 @@ export function App() {
   );
 }
 
-
-
 function AppRoutes() {
   const location = useLocation();
   const state = location.state;
@@ -27,39 +19,31 @@ function AppRoutes() {
 
   return (
     <>
-   
       <Routes location={background || location}>
         <Route path="/" element={<Home />} />
 
-    
         {galleriaData.map((item) => (
           <Route
             key={item.path}
             path={item.path}
             element={<SlidePage data={item} />}
-				
           />
         ))}
 
-   
-      
         {galleriaData.map((item) => (
           <Route
-            key={item.path}
+            key={item.path + "-view"}
             path={item.path + "/view-image"}
-          
             element={<ViewImage dataPic={item} />}
           />
         ))}
       </Routes>
 
-     
       {background && (
         <Routes>
-       
           {galleriaData.map((item) => (
             <Route
-              key={item.path}
+              key={item.path + "-modal"}
               path={item.path + "/view-image"}
               element={
                 <div className="modal-overlay">
@@ -74,26 +58,22 @@ function AppRoutes() {
   );
 }
 
-
 function Header({ slideShowOrder }) {
   const linkPath = slideShowOrder === "STOP SLIDESHOW" ? "/" : "/starry-night";
 
   return (
     <header className="header">
-			<div className="header-content-wrapper">
-
-				<Link to="/" className="slideshow-link">
-        <img
-          className="logo"
-          src={serverDirName + "./images/logo/galleria.svg"}
-					alt="Galleria Logo"
-					/>
-				</Link>
-				
+      <div className="header-content-wrapper">
+        <Link to="/" className="slideshow-link">
+          <img
+            className="logo"
+            src={serverDirName + "./images/logo/galleria.svg"}
+            alt="Galleria Logo"
+          />
+        </Link>
         <Link to={linkPath} className="slideshow-link">
           {slideShowOrder}
         </Link>
-
         <hr className="upper-hr" />
       </div>
     </header>
@@ -102,20 +82,19 @@ function Header({ slideShowOrder }) {
 
 function Home() {
   useEffect(() => {
+    document.title = "Galleria - Home";
     window.scrollTo(0, 0);
   }, []);
+
   return (
-		<>
-		
-			<>
-			 <h1 className="visually-hidden">Galleria. Masterpieces from Van Eyck to Picasso</h1>
+    <>
+      <h1 className="visually-hidden">English Explanatory Dictionary</h1>
       <Header slideShowOrder="START SLIDESHOW" />
-			<main className="galleria-main">
+      <main className="galleria-main">
         <nav className="galleria-nav">
-          {/* {galleriaData.map((item, index) => ( */}
           {galleriaData.map((item) => (
-						<Link
-						key={item.path}
+            <Link
+              key={item.path}
               className="galleria-picture-link"
               to={item.path}
               style={{ textDecoration: "none" }}
@@ -126,7 +105,6 @@ function Home() {
         </nav>
       </main>
     </>
-    </>
   );
 }
 
@@ -135,9 +113,7 @@ function GalleriaNavLink({ item }) {
 
   return (
     <>
-      <picture
-        
-      >
+      <picture>
         <source
           media="(max-width: 480px)"
           srcSet={serverDirName + item.artist.images.mobNav}
@@ -152,50 +128,41 @@ function GalleriaNavLink({ item }) {
           src={serverDirName + item.artist.images.pcNav}
           alt={item.alt}
           loading="lazy"
-          onLoad={() => {
-         
-            setTimeout(() => setImgLoaded(true), 50);
-          }}
+          onLoad={() => setTimeout(() => setImgLoaded(true), 50)}
           className={`galleria-nav-link-image ${item.wrapperClass}`}
         />
       </picture>
 
       {imgLoaded && (
         <div className={`shadow ${item.wrapperClass}`}>
-     
           <div className="galleria-nav-link-image-gradient">
-            <h2 className="galleria-nav-link-painting-name"><pre style={{ margin: 0 }}>{item.name}</pre></h2>
+            <h2 className="galleria-nav-link-painting-name">
+              <pre style={{ margin: 0 }}>{item.name}</pre>
+            </h2>
             <p className="galleria-nav-link-painting-artist-name">
               {item.artist.name}
             </p>
           </div>
         </div>
-     )} 
+      )}
     </>
   );
 }
-
 
 function SlidePage({ data }) {
   const location = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-	}, [location]);
-	
+    document.title = `${data.name} by ${data.artist.name} - Galleria`;
+  }, [location, data]);
 
-	return (
-		<>
-		
-
-		<>
-			
+  return (
+    <>
       <Header slideShowOrder="STOP SLIDESHOW" />
-
       <main className="slideshow-main">
         <section className="slide-section">
           <SlidePic data={data} />
-
           <Link to={data.path + "/view-image"} state={{ background: location }}>
             <div className="slide-painting-view-button">
               <img
@@ -204,7 +171,6 @@ function SlidePage({ data }) {
                 alt="Slide painting view button arrows"
               />
               <p className="slide-painting-view-button-caption">VIEW IMAGE</p>
-             
             </div>
           </Link>
         </section>
@@ -216,9 +182,9 @@ function SlidePage({ data }) {
               <h2 className="artist-name">{data.artist.name}</h2>
             </div>
             <img
-								className="artist-portrait-img"
-								src={serverDirName + data.artist.images.artistPortrait}
-								alt={`Portrait of ${data.name}`}
+              className="artist-portrait-img"
+              src={serverDirName + data.artist.images.artistPortrait}
+              alt={`Portrait of ${data.name}`}
             />
           </div>
         </section>
@@ -226,7 +192,6 @@ function SlidePage({ data }) {
         <section className="painting-description-section">
           <p className="painting-date">{data.year}</p>
           <p className="painting-description-p">{data.description}</p>
-
           <a
             href={data.source}
             target="_blank"
@@ -237,10 +202,8 @@ function SlidePage({ data }) {
           </a>
         </section>
       </main>
-
       <Footer data={data} />
-			</>
-		 </>
+    </>
   );
 }
 
@@ -256,18 +219,16 @@ function SlidePic({ data }) {
         srcSet={serverDirName + data.artist.images.slide}
       />
       <img
-				className="slide-painting"
-				src={serverDirName + data.artist.images.slide}
-				alt={ data.alt}
+        className="slide-painting"
+        src={serverDirName + data.artist.images.slide}
+        alt={data.alt}
       />
     </picture>
   );
 }
 
 function Footer({ data }) {
-  const currentIndex = galleriaData.findIndex(
-    (page) => page.path === data.path
-  );
+  const currentIndex = galleriaData.findIndex((page) => page.path === data.path);
   const baseFill = `${(currentIndex + 1) * 6.6667}%`;
   const previousPage = galleriaData[currentIndex - 1] || null;
   const nextPage = galleriaData[currentIndex + 1] || null;
@@ -282,10 +243,7 @@ function Footer({ data }) {
         </div>
         <div className="footer-slideshowControl">
           {previousPage ? (
-            <Link
-              to={previousPage.path}
-              style={{ opacity: "1", cursor: "pointer" }}
-            >
+            <Link to={previousPage.path}>
               <img
                 className="leftArrow"
                 src={serverDirName + "./images/special_pics/arrow-left-big.svg"}
@@ -303,10 +261,7 @@ function Footer({ data }) {
           )}
 
           {nextPage ? (
-            <Link
-              to={nextPage.path}
-              style={{ opacity: "1", cursor: "pointer" }}
-            >
+            <Link to={nextPage.path}>
               <img
                 className="rightArrow"
                 src={serverDirName + "./images/special_pics/arrow-right-big.svg"}
@@ -331,17 +286,19 @@ function Footer({ data }) {
 function ViewImage({ dataPic }) {
   useEffect(() => {
     document.body.style.overflow = "hidden";
-
+    document.title = `Viewing ${dataPic.name} - Galleria`;
     return () => {
       document.body.style.overflow = "";
     };
-  }, []);
+  }, [dataPic]);
+
   return (
     <div className="view-pic">
-  
-			<img className='img-lage' src={serverDirName + dataPic.artist.images.show} alt={dataPic.alt} />
-		
-			
+      <img
+        className="img-lage"
+        src={serverDirName + dataPic.artist.images.show}
+        alt={dataPic.alt}
+      />
     </div>
   );
 }

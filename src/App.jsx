@@ -1,5 +1,6 @@
 import { HashRouter as Router, Route, Routes, Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+
 import galleriaData from "./data.json";
 
 const serverDirName = ""; // or "/galleria-portfolio"
@@ -82,13 +83,13 @@ function Header({ slideShowOrder }) {
 
 function Home() {
   useEffect(() => {
-    document.title = "Galleria - Home";
+    document.title = "Galleria. Portfolio by Shatskyi Oleksandr. Masterpieces from Van Eyck to Picasso";
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <>
-      <h1 className="visually-hidden">English Explanatory Dictionary</h1>
+      <h1 className="visually-hidden">Galleria. Masterpieces from Van Eyck to Picasso</h1>
       <Header slideShowOrder="START SLIDESHOW" />
       <main className="galleria-main">
         <nav className="galleria-nav">
@@ -154,7 +155,7 @@ function SlidePage({ data }) {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = `${data.name} by ${data.artist.name} - Galleria`;
+    document.title = `${data.name} by ${data.artist.name} - Galleria. Portfolio by Shatskyi Oleksandr. `;
   }, [location, data]);
 
   return (

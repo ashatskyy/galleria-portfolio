@@ -83,7 +83,7 @@ function Header({ slideShowOrder }) {
 
 function Home() {
   useEffect(() => {
-    document.title = "Galleria. Portfolio by Shatskyi Oleksandr. Masterpieces from Van Eyck to Picasso";
+    document.title = "Galleria. Portfolio by Oleksandr S. Masterpieces from Van Eyck to Picasso";
     window.scrollTo(0, 0);
   }, []);
 
@@ -155,7 +155,7 @@ function SlidePage({ data }) {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = `${data.name} by ${data.artist.name} - Galleria. Portfolio by Shatskyi Oleksandr. `;
+    document.title = `${data.name} by ${data.artist.name} - Galleria. Portfolio by Oleksandr S. `;
   }, [location, data]);
 
   return (

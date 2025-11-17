@@ -192,7 +192,8 @@ function SlidePage({ data }) {
 
         <section className="painting-description-section">
           <p className="painting-date">{data.year}</p>
-          <p className="painting-description-p">{data.description}</p>
+          {/* <p className="painting-description-p">{data.description}</p> */}
+          <p className="painting-description-p" dangerouslySetInnerHTML={{ __html: data.description }}></p>
           <a
             href={data.source}
             target="_blank"

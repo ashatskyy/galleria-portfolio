@@ -1,13 +1,14 @@
 * {
   box-sizing: border-box;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Libre Baskerville", "Noto Sans JP", serif;
 }
 
 :root{
- font-size: 16px;
+	font-size: 16px;
 }
 
 body {
-  margin: 0;
+	margin: 0;
 	user-select: none;
+	font-family: "Libre Baskerville", "Noto Sans JP", serif;
 }

@@ -1,12 +1,21 @@
-# React + Vite
+# Art gallery website "galleria."
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+My portfolio website for an art gallery, featuring 15 masterpiece photos with descriptions. Pixel-perfect implementation based on a Figma design file.
 
-Currently, two official plugins are available:
+## Features
+- Responsive Design: Works seamlessly on desktop, tablet, and mobile devices.
+- Renders Correctly: Across all modern browsers.
+- Fully Integrates: With all social media platforms, including banners with images.
+- Each Page: Accessible via its own unique URL.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies
+- HTML
+- SCSS
+- REACT
 
-## Expanding the ESLint configuration
+## Available at the following web address
+https://ashatskyy.github.io/galleria-portfolio/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Autor
+Alexander Shatsky

@@ -17,5 +17,5 @@ My portfolio website for an art gallery, featuring 15 masterpiece photos with de
 ## Available at the following web address
 https://ashatskyy.github.io/galleria-portfolio/
 
-## Autor
+## Author
 Alexander Shatsky

@@ -1,4 +1,4 @@
-# Art Gallery Website "Galleria"
+# Art Gallery Website "galleria."
 
 ## Description
 Pixel-perfect implementation based on a Figma design file for an online art gallery, featuring 15 masterpiece photos with descriptions.

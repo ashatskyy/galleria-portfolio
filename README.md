@@ -1,18 +1,21 @@
-# Art gallery website "galleria."
+# Art Gallery Website "Galleria"
 
 ## Description
-My portfolio website for an art gallery, featuring 15 masterpiece photos with descriptions. Pixel-perfect implementation based on a Figma design file.
+Pixel-perfect implementation based on a Figma design file for an online art gallery, featuring 15 masterpiece photos with descriptions.
 
 ## Features
-- Responsive Design: Works seamlessly on desktop, tablet, and mobile devices.
-- Renders Correctly: Across all modern browsers.
-- Fully Integrates: With all social media platforms, including banners with images.
-- Each Page: Accessible via its own unique URL.
+- Allows: different types of easy navigation through the website, including slide navigation
+- Provides: Wikipedia references for all masterpieces
+- Magnifies: each masterpiece
+- Responsive design: works seamlessly on desktop, tablet, and mobile devices
+- Renders correctly: across all modern browsers
+- Fully integrates: with all social media platforms, including banners with images
+- Each page: accessible via its own unique URL
 
 ## Technologies
 - HTML
 - SCSS
-- REACT
+- React
 
 ## Available at the following web address
 https://ashatskyy.github.io/galleria-portfolio/
